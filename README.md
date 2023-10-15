@@ -37,3 +37,7 @@ The base directory is where the original healthy and cancerous directories are a
 ```
 python combine_train_test.py /base/directory /destination/directory
 ```
+## Google colab 
+1. upload the model_ready_data directory on your google drive 
+2. [In google colab: from google.colab import drive](https://colab.research.google.com/drive/1JjGzMrDFRyuKYkfypWTtAyy4IjSyMl3H?usp=sharing)https://colab.research.google.com/drive/1JjGzMrDFRyuKYkfypWTtAyy4IjSyMl3H?usp=sharing
+   
