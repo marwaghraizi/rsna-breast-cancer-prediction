@@ -3,6 +3,7 @@ import random
 import sys
 
 # Directory containing all the images
+random.seed(9)
 source_directory = sys.argv[1]
 n = int(sys.argv[2])
 

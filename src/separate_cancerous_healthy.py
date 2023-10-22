@@ -7,6 +7,7 @@ import shutil
 # Input DataFrame with "ID" and "Label" columns
 train_data_path = "../data/train.csv"
 train_metadata = pd.read_csv(train_data_path)
+train_metadata["filename"] = train_metadata["patient_id"].astype(str) + "_" + train_metadata["image_id"].astype(str)
 
 # Input directory containing image files
 input_directory = sys.argv[1]
@@ -23,7 +24,8 @@ os.makedirs(output_directory_1, exist_ok=True)
 
 # Iterate through the DataFrame and move images to the corresponding directories
 for index, row in train_metadata.iterrows():
-    image_id = row["image_id"]
+	#image_id = row["image_id"]
+    image_id = row["filename"]
     label = row["cancer"]
     source_path = os.path.join(input_directory, str(image_id) +".png")
 
@@ -36,7 +38,7 @@ for index, row in train_metadata.iterrows():
         continue
 
     try:
-        shutil.move(source_path, destination_path)
+        shutil.copy(source_path, destination_path)
         print(f"Moved {image_id} to Directory {label}")
     except FileNotFoundError:
         print(f"File {image_id} not found in the input directory.")

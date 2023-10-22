@@ -10,7 +10,7 @@ original_healthy_directory = sys.argv[1]
 # Define the ratio of train to test (5:1)
 train_ratio = 5
 test_ratio = 1
-
+random.seed(9)
 # Function to move files from source to destination
 def move_files(source, destination, file_list):
     os.makedirs(destination, exist_ok=True)
