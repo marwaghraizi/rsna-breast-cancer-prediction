@@ -1,5 +1,16 @@
 # rsna-breast-cancer-prediction
-## Rename image files
+## Data Exploration:
+Notebook: data_exploration_preprocessing_DL_breast_cancer_detection.ipynb
+
+## Preprocessing Files:
+Normalization: data_exploration_preprocessing_DL_breast_cancer_detection.ipynb
+Data Augmentation: data_augmentation.py
+Enhancement: contrast_normalizer_batching.py
+## Training:
+EfficientNet & DenseNet: bethuel_ghraizi_salaun_ kaggle-rsna-breast-cancer-detection.ipynb
+
+## File Structure Organization
+### Rename image files
 This script removes the patient id from file names 
 ```
 python rename_image_files.py /source/directory /destination/directory
@@ -10,7 +21,7 @@ the train.csv path is hard coded
 python separate_cancerous_healthy.py /source/directory /healthy/output/directory /cancerous/output/directory
 ```
 
-## Create train and test within class 
+### Create train and test within class 
 Randomly shuffles the images within a class and separates them into train and test with a 5:1 ratio <br />
 Target file organization:<br />
 ---healthy <br />
@@ -24,7 +35,7 @@ Target file organization:<br />
 python create_train_test_within_class.py /healthy/directory /cancerous/directory
 ```
 
-## Combine train and test
+### Combine train and test
 Target file organization:<br />
 ---train<br />
 ------cancerous<br />
@@ -37,7 +48,5 @@ The base directory is where the original healthy and cancerous directories are a
 ```
 python combine_train_test.py /base/directory /destination/directory
 ```
-## Google colab 
-1. upload the model_ready_data directory on your google drive. Data can be found [here](https://drive.google.com/drive/folders/1t9eJEc7yxk83lp_JszQyesw80nWy2ll9?usp=sharing)
-2. [Colab Marwa](https://colab.research.google.com/drive/1JjGzMrDFRyuKYkfypWTtAyy4IjSyMl3H?usp=sharing)
+
    
