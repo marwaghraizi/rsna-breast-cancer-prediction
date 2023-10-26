@@ -15,7 +15,7 @@ This script removes the patient id from file names
 ```
 python rename_image_files.py /source/directory /destination/directory
 ```
-## Separate into cancerous and healthy
+### Separate into cancerous and healthy
 the train.csv path is hard coded
 ```
 python separate_cancerous_healthy.py /source/directory /healthy/output/directory /cancerous/output/directory
