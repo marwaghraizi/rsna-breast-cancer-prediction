@@ -3,9 +3,9 @@
 Notebook: data_exploration_preprocessing_DL_breast_cancer_detection.ipynb
 
 ## Preprocessing Files:
-Normalization: data_exploration_preprocessing_DL_breast_cancer_detection.ipynb
-Data Augmentation: data_augmentation.py
-Enhancement: contrast_normalizer_batching.py
+Normalization: data_exploration_preprocessing_DL_breast_cancer_detection.ipynb <br />
+Data Augmentation: data_augmentation.py <br />
+Enhancement: contrast_normalizer_batching.py <br />
 ## Training:
 EfficientNet & DenseNet: bethuel_ghraizi_salaun_ kaggle-rsna-breast-cancer-detection.ipynb
 
